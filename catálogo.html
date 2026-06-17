@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gamer- Catálogo Técnico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">👾 Mundo Gamer</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catálogo.html" class="active">Catálogo</a></li>
+                <li><a href="glosario.html">Gamer Lore</a></li>
+                <li><a href="contacto.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <button class="btn-filter" data-category="Todos">Todos los Títulos</button>
+            <button class="btn-filter" data-category="RPG">RPG</button>
+            <button class="btn-filter" data-category="Acción">Acción</button>
+            <button class="btn-filter" data-category="Estrategia">Estrategia</button>
+            <button class="btn-filter" data-category="Aventura">Aventura</button>
+        </section>
+
+        <section class="grid-container" id="game-grid"></section>
+    </main>
+
+    <aside class="modal" id="game-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 - Desarrollo.HTML</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

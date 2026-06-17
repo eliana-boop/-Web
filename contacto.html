@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gamer - Soporte Técnico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">👾 Mundo Gamer</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catálogo.html">Catálogo</a></li>
+                <li><a href="glosario.html">Gamer Lore</a></li>
+                <li><a href="contacto.html" class="active">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1 style="text-align: center; margin-bottom: 25px;">Formulario de Soporte</h1>
+            
+            <form id="support-form">
+                <div class="form-group">
+                    <label for="username">Gamertag / Nombre:</label>
+                    <input type="text" id="username" required placeholder="Ej: PlayerOne">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" required placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Reporte o Consulta:</label>
+                    <textarea id="message" rows="5" required placeholder="Escribe aquí tu duda técnica o sugerencia de juego..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Reporte</button>
+            </form>
+            <div id="status-msg" class="form-status"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 -Desarrollo.HTML</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
